@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐĂNG NHẬP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">">
+</head>
+<body>
+    <div class="shadow-lg rounded-5 bg-opacity-50 bg-primary-subtle text-emphasis-primary border border-primary-subtle m-5 p-5">
+    <form action="" method="get">
+        <h2 class = "text-center text-primary text-uppercase ">Tạo tài khoản</h2>
+        
+        <div class="required p-3">
+            <label class="form-label" for="ho"><b>Họ</b></label>
+            <input class="form-control" placeholder="Nhập họ của bạn" type="text" name="nhapHo" id="nhapHo" required>
+            <div class="invalid-feedback">
+                Vui lòng điền họ của bạn!
+            </div>
+        </div>
+
+        <div class="required p-3"> 
+            <label class="form-label" for="ten"><b>Tên</b></label>
+            <input class="form-control" placeholder="Nhập tên của bạn" type="text" name="nhapTen" id="nhapTen" required>
+            <div class="invalid-feedback">        
+                Vui lòng điền tên của bạn!
+            </div>
+        </div>
+
+        <div class="container p-3">
+            <label for="gioiTinh"><b>Giới tính</b></label>
+            <select class="form-select" name="gioiTinh" id="gioiTinh" required>
+                <option value="1">Nữ</option>
+                <option value="2">Nam</option>
+            </select>
+            <div class="invalid-feedback">        
+                Vui lòng chọn giới tính của bạn!
+            </div>
+        </div>
+
+        <div class="required p-3">
+            <label class="form-label" for="ngaySinh"><b>Ngày/Tháng/Năm</b></label>
+            <input class="form-control" type="date" name="nhapNgaySinh" id="nhapNgaySinh" required>
+        </div>
+
+        <div class="container p-3">
+            <label class ="form-label" for="tenDangNhap"><b>Tên sử dụng</b></label>
+            <input class ="form-control" placeholder="Email/Số điện thoại/Mã sinh viên"  required type="text" name="tenDangNhap" id="tenDangNhap" aria-describedby="teDangNhapHelp">
+            <div id="teDangNhapHelp" class ="form-text"><i>Chúng tôi sẽ bảo mật thông tin của bạn.</i></div>
+            <div class="invalid-feedback">        
+                Vui lòng điền tên đăng nhập của bạn!
+            </div>
+        </div>
+
+        <div class="container p-3">
+            <label class="form-label" for="matKhau"><b>Mật khẩu</b></label>
+            <input class="form-control" placeholder="Nhập mật khẩu" required type="password" name="matKhau" id="matKhau" aria-describedby="passwordHelp" autocomplete="off" >
+            <div id="password" class="form-text"><i>Mật khẩu của bạn phải dài 8-20 ký tự, chứa các chữ cái, số, các kí tự đặc biệt, đồng thời không được chứa khoảng trắng hoặc biểu tượng cảm xúc.</i></div>
+            <div class="invalid-feedback">        
+                Vui lòng điền mật khẩu của bạn!
+            </div>
+        </div>
+
+        <div class="container p-3">
+            <label class="form-label" for="matKhau"><b>Xác minh lại </b></label>
+            <input class="form-control" placeholder="Nhập mật khẩu" required type="password" name="matKhau" id="matKhau" aria-describedby="passwordHelp" autocomplete="off" >
+            <i class="fa-regular fa-eye-slash"></i>
+            <div id="passwordHelp" class="form-text"><i>Mật khẩu của bạn phải dài 8-20 ký tự, chứa các chữ cái, số, các kí tự đặc biệt, đồng thời không được chứa khoảng trắng hoặc biểu tượng cảm xúc.</i></div>
+            <div class="invalid-feedback">        
+                Vui lòng điền mật khẩu của bạn!
+            </div>
+        </div>
+
+        <div class ="container p-3">
+            <label for="nhoMatKhau"><b>Nhớ mật khẩu</b></label>
+            <input class ="form-check-input" type="checkbox" name="nhoMatKhau" id="nhoMatKhau">
+        </div>
+
+        <div class="row container p-3">
+            <div class="col container">
+                <button class="btn btn-outline-primary" type="submit"><b>Đăng ký</b></button> 
+            </div>
+            <div class="col container text-end">
+                <button class="btn btn-outline-primary" type="reset"><b>Nhập lại</b></button>
+            </div>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
