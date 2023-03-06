@@ -12,7 +12,7 @@
     <form action="" method="get">
         <h2 class = "text-center text-primary text-uppercase ">Tạo tài khoản</h2>
         
-        <div class="required p-3">
+        <div class="container p-3">
             <label class="form-label" for="ho"><b>Họ</b></label>
             <input class="form-control" placeholder="Nhập họ của bạn" type="text" name="nhapHo" id="nhapHo" required>
             <div class="invalid-feedback">
@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <div class="required p-3"> 
+        <div class="container p-3"> 
             <label class="form-label" for="ten"><b>Tên</b></label>
             <input class="form-control" placeholder="Nhập tên của bạn" type="text" name="nhapTen" id="nhapTen" required>
             <div class="invalid-feedback">        
@@ -39,13 +39,13 @@
             </div>
         </div>
 
-        <div class="required p-3">
+        <div class="container p-3">
             <label class="form-label" for="ngaySinh"><b>Ngày/Tháng/Năm</b></label>
             <input class="form-control" type="date" name="nhapNgaySinh" id="nhapNgaySinh" required>
         </div>
 
         <div class="container p-3">
-            <label class ="form-label" for="tenDangNhap"><b>Tên sử dụng</b></label>
+            <label class ="form-label" for="tenDangNhap"><b>Tên sử dụng <i class="ti-user"></i></b></label>
             <input class ="form-control" placeholder="Email/Số điện thoại/Mã sinh viên"  required type="text" name="tenDangNhap" id="tenDangNhap" aria-describedby="teDangNhapHelp">
             <div id="teDangNhapHelp" class ="form-text"><i>Chúng tôi sẽ bảo mật thông tin của bạn.</i></div>
             <div class="invalid-feedback">        
@@ -54,7 +54,7 @@
         </div>
 
         <div class="container p-3">
-            <label class="form-label" for="matKhau"><b>Mật khẩu</b></label>
+            <label class="form-label" for="matKhau"><b>Mật khẩu <i class="ti-locks"></i></b></label>
             <input class="form-control" placeholder="Nhập mật khẩu" required type="password" name="matKhau" id="matKhau" aria-describedby="passwordHelp" autocomplete="off" >
             <div id="password" class="form-text"><i>Mật khẩu của bạn phải dài 8-20 ký tự, chứa các chữ cái, số, các kí tự đặc biệt, đồng thời không được chứa khoảng trắng hoặc biểu tượng cảm xúc.</i></div>
             <div class="invalid-feedback">        
@@ -77,14 +77,11 @@
             <input class ="form-check-input" type="checkbox" name="nhoMatKhau" id="nhoMatKhau">
         </div>
 
-        <div class="row container p-3">
-            <div class="col container">
-                <button class="btn btn-outline-primary" type="submit"><b>Đăng ký</b></button> 
-            </div>
-            <div class="col container text-end">
-                <button class="btn btn-outline-primary" type="reset"><b>Nhập lại</b></button>
-            </div>
-        </div>
+        <div class="container p-3">
+        <button class="p-2 btn btn-outline-primary container" type="submit"><b>Đăng ký</b></button>
+        <button class="p-2 btn btn-outline-primary container" type="reset"><b>Nhập lại</b></button>
+        <div>
+
     </form>
     </div>
 </body>
