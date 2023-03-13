@@ -1,0 +1,67 @@
+h2{
+    color:rgb(30, 30, 134);
+    font-size: 20px;
+    font-weight: 700;
+    word-spacing: 0%;
+}
+h3{
+    color:rgb(30, 30, 134);
+    font-weight:550;
+    font-style: italic;
+    text-align: center;
+    line-height: 0.7;
+}
+h1{
+    text-align: center;
+    color:rgb(233, 34, 34);
+    font-size: 2.7rem;
+    font-weight: bolder;
+}
+p{
+    color:rgb(30, 30, 134);
+    font-size: 20px; 
+    padding: 5px;
+}
+ol{
+    color:rgb(30, 30, 134)
+}
+.bang-noi-quy{
+    background: white;
+}
+.border{
+    border: 1px solid rgb(101, 207, 240) ;
+}
+.border-2{
+    border-width: 5px ;
+}
+.border-3{
+    border-width: 10px ;
+}
+.border-blue{
+    border-color:rgb(10, 10, 92);
+}
+.p-2{
+    padding: 5px ;
+
+}
+.p-3{
+    padding: 5px ;
+
+}
+.p-5{
+    padding: 5px ;
+
+}
+li{
+    padding: 8px;
+}
+.chu{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:justify;
+}
+
+b{
+    color:rgb(30, 30, 134);
+    padding: 8px;
+    word-spacing: 0.7;
+}
